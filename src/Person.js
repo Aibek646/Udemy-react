@@ -1,5 +1,5 @@
 import React from 'react';
-import './Person.css';
+import classes from './Person.module.css';
 import styled from 'styled-components'
 
 
@@ -16,11 +16,11 @@ const StyledDiv = styled.div`
 }`;
 
 const Person = (props) => {
-  
-    return ( <div>
-            <p onClick={props.click} >i am {props.name} person {props.age}</p>
-            <p>{props.children}</p>
-            <input type="text" onChange={props.changed} value={props.name}/>
+
+    return (<div>
+        <p onClick={props.click} >i am {props.name} person {props.age}</p>
+        <p>{props.children}</p>
+        <input type="text" onChange={props.changed} value={props.name} />
     </div>
     );
 }
